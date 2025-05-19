@@ -70,6 +70,12 @@ $total = 0;
             </tr>
 
         </table>
+        <?php if (!empty($_SESSION['cart'])): ?>
+    <a href="checkout.php">
+        <button>Finalizar Compra</button>
+    </a>
+<?php endif; ?>
+
     <?php endif; ?>
 </body>
 
